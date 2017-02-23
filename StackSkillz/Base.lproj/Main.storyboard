@@ -28,36 +28,52 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zot-vw-8tq">
-                                <rect key="frame" x="157" y="68" width="60" height="30"/>
-                                <state key="normal" title="Push Me"/>
+                                <rect key="frame" x="161" y="68" width="53" height="30"/>
+                                <state key="normal" title="Add em"/>
                                 <connections>
                                     <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJD-Ah-OEm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-fe-ogP">
-                                <rect key="frame" x="164" y="96" width="47" height="30"/>
-                                <state key="normal" title="Or me!"/>
-                                <connections>
-                                    <action selector="Button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJl-5d-UGk"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2H-a5-qJh">
+                                <rect key="frame" x="138" y="153" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Zi-yP-BTm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwR-o0-kwu">
+                                <rect key="frame" x="138" y="203" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IFl-Wy-Skk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OPq-fe-ogP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D2n-8S-xOv"/>
-                            <constraint firstItem="OPq-fe-ogP" firstAttribute="top" secondItem="Zot-vw-8tq" secondAttribute="bottom" constant="-2" id="DNx-WF-liu"/>
                             <constraint firstItem="pkv-HU-QTP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="bYq-U3-9V5"/>
                             <constraint firstItem="Zot-vw-8tq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewY-D6-iY8"/>
+                            <constraint firstItem="e2H-a5-qJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iLq-nM-Gup"/>
                             <constraint firstItem="Zot-vw-8tq" firstAttribute="top" secondItem="pkv-HU-QTP" secondAttribute="bottom" constant="10" id="ieD-Sn-bBB"/>
+                            <constraint firstItem="pwR-o0-kwu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lAq-f4-XK3"/>
+                            <constraint firstItem="e2H-a5-qJh" firstAttribute="top" secondItem="Zot-vw-8tq" secondAttribute="bottom" constant="55" id="lGf-Zv-UfK"/>
                             <constraint firstItem="pkv-HU-QTP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mbP-i4-NiP"/>
+                            <constraint firstItem="pwR-o0-kwu" firstAttribute="top" secondItem="e2H-a5-qJh" secondAttribute="bottom" constant="20" id="pKc-OM-0Zh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tex1" destination="e2H-a5-qJh" id="hmY-a6-iRn"/>
+                        <outlet property="text2" destination="pwR-o0-kwu" id="sbX-Td-d9O"/>
                         <outlet property="thelabel" destination="pkv-HU-QTP" id="weO-R0-rtY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="73" y="8"/>
         </scene>
     </scenes>
 </document>
